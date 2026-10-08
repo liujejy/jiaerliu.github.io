@@ -3,19 +3,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jiaer Liu | UCLA Economics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #292929;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 25px 35px 70px;
+    }
+
+    a {
+      color: #173c66;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .site-name {
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    main {
+      padding-top: 25px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 12px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 30px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .affiliation {
+      color: #555;
+      font-size: 19px;
+    }
+
+    .paper-title {
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 15px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        padding: 20px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        gap: 15px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Georgia, serif; max-width: 800px; margin: 80px auto; padding: 20px;">
-  <h1>Jiaer Liu</h1>
-  <p>Ph.D. Candidate in Economics</p>
-  <p>University of California, Los Angeles</p>
 
-  <h2>Research</h2>
-  <p>My research interests include market design,
-     market microstructure, and macro-finance.</p>
+<body>
+  <div class="container">
 
-  <h2>Contact</h2>
-  <p>UCLA Department of Economics</p>
+    <header>
+      <a class="site-name" href="index.html">
+        Jiaer Liu
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.pdf">CV (PDF)</a>
+        <a href="#research">Research Papers</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1>Jiaer Liu</h1>
+
+      <p class="affiliation">
+        Ph.D. Candidate in Economics
+      </p>
+
+      <p class="affiliation">
+        University of California, Los Angeles
+      </p>
+
+      <section>
+        <h2>About me</h2>
+
+        <p>
+          I am a Ph.D. candidate in Economics at UCLA.
+          My research interests include market design,
+          market microstructure, and macro-finance,
+          with a focus on the functioning and efficiency
+          of financial markets.
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+
+        <p class="paper-title">
+          Design of the U.S. Treasury Secondary Market:
+          Venue Sorting, Competing Mechanisms,
+          and Allocative Efficiency
+        </p>
+
+        <p><em>Job Market Paper</em></p>
+      </section>
+
+      <section>
+        <h2>Contact information</h2>
+
+        <p>
+          Department of Economics<br>
+          University of California, Los Angeles
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      &copy; 2026 Jiaer Liu
+    </footer>
+
+  </div>
 </body>
 </html>
