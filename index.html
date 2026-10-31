@@ -97,12 +97,17 @@
     }
 
     .profile-photo {
-      width: 550px;
-      min-width: 550px;
+      width: 500px;
+      min-width: 500px;
       height: auto;
       flex-shrink: 0;
       border-radius: 4px;
       display: block;
+      visibility: hidden;
+    }
+
+    .profile-photo.loaded {
+      visibility: visible;
     }
 
     /* Research section */
@@ -151,7 +156,7 @@
       .profile-photo {
         width: 100%;
         min-width: 0;
-        max-width: 550px;
+        max-width: 500px;
         height: auto;
       }
     }
@@ -205,6 +210,14 @@
           class="profile-photo"
           src="/JiaerJanetLiu.jpg"
           alt="Jiaer Janet Liu"
+          width="1100"
+          height="733"
+          fetchpriority="high"
+          decoding="async"
+          onload="this.decode().catch(() => {}).then(() => {
+            this.classList.add('loaded');
+          });"
+          onerror="this.classList.add('loaded');"
         >
 
       </div>
