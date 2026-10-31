@@ -36,6 +36,8 @@
       text-decoration: underline;
     }
 
+    /* Header */
+
     header {
       display: flex;
       justify-content: space-between;
@@ -86,7 +88,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 40px;
+      gap: 30px;
     }
 
     .profile-info {
@@ -96,12 +98,11 @@
 
     .profile-photo {
       width: 450px;
-      max-width: 100%;
+      min-width: 450px;
       height: auto;
+      flex-shrink: 0;
       border-radius: 4px;
-      object-fit: cover;
       display: block;
-      flex-shrink: 1;
     }
 
     /* Research section */
@@ -125,9 +126,9 @@
       color: #777;
     }
 
-    /* Mobile layout */
+    /* Mobile and tablet layout */
 
-    @media (max-width: 650px) {
+    @media (max-width: 800px) {
       .container {
         padding: 20px;
       }
@@ -148,8 +149,9 @@
       }
 
       .profile-photo {
-        width: 300px;
-        max-width: 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: 450px;
         height: auto;
       }
     }
