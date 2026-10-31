@@ -91,14 +91,17 @@
 
     .profile-info {
       flex: 1;
+      min-width: 0;
     }
 
     .profile-photo {
-      width: 240px;
+      width: 450px;
+      max-width: 100%;
       height: auto;
       border-radius: 4px;
       object-fit: cover;
       display: block;
+      flex-shrink: 1;
     }
 
     /* Research section */
@@ -145,7 +148,8 @@
       }
 
       .profile-photo {
-        width: 200px;
+        width: 300px;
+        max-width: 100%;
         height: auto;
       }
     }
