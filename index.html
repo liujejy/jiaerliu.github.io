@@ -80,6 +80,29 @@
       font-size: 19px;
     }
 
+    /* Profile section */
+
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-photo {
+      width: 240px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Research section */
+
     .paper-title {
       font-weight: 500;
     }
@@ -99,6 +122,8 @@
       color: #777;
     }
 
+    /* Mobile layout */
+
     @media (max-width: 650px) {
       .container {
         padding: 20px;
@@ -111,6 +136,17 @@
 
       nav {
         gap: 15px;
+      }
+
+      .profile {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .profile-photo {
+        width: 200px;
+        height: auto;
       }
     }
   </style>
@@ -137,21 +173,35 @@
 
     <main>
 
-      <!-- Name and Affiliation -->
+      <!-- Name, Affiliation, and Photo -->
 
-      <h1>Jiaer Janet Liu</h1>
+      <div class="profile">
 
-      <p class="affiliation">
-        Ph.D. Candidate in Economics
-      </p>
+        <div class="profile-info">
 
-      <p class="affiliation">
-        University of California, Los Angeles
-      </p>
+          <h1>Jiaer Janet Liu</h1>
 
-      <p class="affiliation">
-        Department of Economics
-      </p>
+          <p class="affiliation">
+            Ph.D. Candidate in Economics
+          </p>
+
+          <p class="affiliation">
+            University of California, Los Angeles
+          </p>
+
+          <p class="affiliation">
+            Department of Economics
+          </p>
+
+        </div>
+
+        <img
+          class="profile-photo"
+          src="/JiaerJanetLiu.jpg"
+          alt="Jiaer Janet Liu"
+        >
+
+      </div>
 
       <!-- About Me -->
 
